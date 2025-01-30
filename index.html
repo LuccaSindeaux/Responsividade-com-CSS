@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Blog Responsivo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <style>
+        html{
+            font-family: 'Manrope', sans-serif;
+            width: 100%;
+            height:100%;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        body{
+            margin:0;
+        }
+        h1{
+            font-size: 4rem;
+            font-weight: 800;
+            margin:0;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 800;
+            margin:0;
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        .contacTitle{
+            margin-top: .5rem;
+        }
+
+        .container{
+            padding: 10rem 7.5rem;
+            text-align: center;
+        }
+
+        .container > p{
+            margin-top: 1.5rem;
+        }
+
+        .container > button{
+            margin-top: 2rem;
+            transition: opacity 0.5s ease-in-out, transform 0.5s .2s;
+        }
+        .container button:hover{
+            opacity: (0.8);
+            transform: scale(1.1);
+        }
+
+        #presentationContainer{
+            padding: 2.5rem 7.5rem;
+            height: 100vh;
+            background-image: url(assets/background.png);
+            background-repeat: no-repeat;
+            background-position: cover;
+        }
+        #presentation{
+            position: relative; 
+            width:40vw;
+            top:calc(50% - 9rem);
+        }
+
+        .backgroundGradient{
+            background: linear-gradient(180deg, #fff, #d9d9d9);
+        }
+
+        button{
+            background-color: #F84646;
+            color:#fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: .5rem 1.5rem;
+            border-radius: .5rem;
+            border:none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="presentationContainer">
+            <div id="presentation">
+                <h1>Transformando em produtos digitais</h1>
+                <p>
+                    Para que nossos clientes mantenham altos níveis de qualidade,<br> oferecemos serviços de gestão de projetos e análise de negócios<br> com nossa equipe especializada em diversos setores.
+                </p>
+            </div>
+        </section>
+
+        <section  class="container backgroundGradient">
+                <img src="assets/user.png" alt="">
+                <h2 class="contacTitle">Entre em contato</h2>
+                <p>
+                    Contate-nos para obter informações detalhadas sobre nossas soluções, serviços e produtos.
+                </p>
+                <button>Enviar mensagem</button>
+        </section>
+    </main>
+    
+</body>
+</html>
