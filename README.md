@@ -95,3 +95,12 @@ Ao definir que um grid está numa área, estamos "jogando batalha naval" com o c
         .comp9{
             grid-area: 3 / 5;
         }
+
+
+
+Portabilidade e Responsividade:
+A tag meta que aparece no VScode quando criamos a tag html:5 é a responsável pela portabilidade (viewport). Existem tamanhos considerados padrões para desenvolvimento de telas responsivas:
+                - Desktop: X >= 1024px
+                - Tablet:  X >= 768px
+                - Mobile   X < 768px
+A alteração da portabilidade em sites é feita via CSS com a ferramenta @media, usadas para criação de Media Queries, com ela alteramos todas as propriedades de nosso site fentro dela como visto no final do código de CSS onde o projeto goi portado para tablet e mobile.

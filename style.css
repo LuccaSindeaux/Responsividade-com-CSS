@@ -14,7 +14,7 @@ h1{
     margin:0;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     margin:0;
 }
@@ -50,13 +50,18 @@ h3{
     background-image: url(assets/background.png);
     background-repeat: no-repeat;
     background-position: cover;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 #presentation{
-    width: 40vw;
+    width: 37.5rem;
 }
+
+/* .presentationDescription{
+
+} */
 
 .backgroundGradient{
     background: linear-gradient(180deg, #fff, #d9d9d9);
@@ -102,6 +107,10 @@ button{
 .articleContainer:nth-child(even){
     margin-top:5rem;
     flex-direction: row-reverse;
+}
+.articleContainer > img{
+    width: 50%;
+    object-fit: cover;
 }
 
 .articleDetail{
@@ -200,4 +209,179 @@ button{
 }
 .comp9{
     grid-area: 3 / 5;
+}
+
+
+/* MEDIA QUERY DE QUANDO O DISPOSITIVO É UM TABLET - WIDTH ENTRE 768px E 1023px*/
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .container{
+        padding: 5rem 4rem;
+    }
+
+    #presentationContainer{
+        padding: 5rem 4rem;
+    }
+
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .gridContainerCompany{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .comp1{
+        grid-area: auto;
+    }
+    .comp2{
+        grid-area: auto ;
+    }
+    .comp3{
+        grid-area: auto ;
+    }
+    .comp4{
+        grid-area: auto ;
+    }
+    .comp5{
+        grid-area: auto ;
+    }
+    .comp6{
+        grid-area: auto;
+    }
+    .comp7{
+        grid-area: auto;
+    }
+    .comp8{
+        grid-area: auto;
+    }
+    .comp9{
+        grid-area: auto;
+    }
+}
+
+
+/* MEDIA QUERY DE QUANDO O DISPOSITIVO É UM CELULAR - WIDTH DE ATÉ 768px */
+@media only screen and (max-width: 767px) {
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+
+    #presentationContainer{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+
+    #qualities{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    #qualities > img{
+        transform: rotate(90deg);
+        margin: 2.5rem 0
+    }
+
+    .articleContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .articleContainer:nth-child(even){
+        flex-direction: column-reverse;
+        
+    }
+
+    .articleDetail{
+        text-align: center;
+        align-items: normal;
+        margin: 2rem 0 0 0;
+    }
+    .articleContainer:nth-child(even) > .articleDetail{
+        margin: 2rem 0 0 0;
+    }
+
+    .articleContainer > img{
+        width:100%;
+    }
+    
+    .gridContainerCompany{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .gridCompanyItem{
+        height: 6rem;
+    }
+
+    .comp1{
+        grid-area: auto;
+    }
+    .comp2{
+        grid-area: auto ;
+    }
+    .comp3{
+        grid-area: auto ;
+    }
+    .comp4{
+        grid-area: auto ;
+    }
+    .comp5{
+        grid-area: auto ;
+    }
+    .comp6{
+        grid-area: auto;
+    }
+    .comp7{
+        grid-area: auto;
+    }
+    .comp8{
+        grid-area: auto;
+    }
+    .comp9{
+        grid-area: auto;
+    }
+
+    #footerList{
+       flex-direction: column;
+       justify-content: center;
+    }
+    #footerList > ul{
+        margin-top: 3rem;
+    }
+    #footerList > ul:first-child{
+        margin-top: 0;
+    }
+
+    .footerCopyright{
+        flex-direction: column-reverse;
+    }
+    .footerCopyright > div:first-child{
+        margin-top: 4rem;
+    }
+
 }
