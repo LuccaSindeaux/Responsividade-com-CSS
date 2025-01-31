@@ -32,3 +32,113 @@ Tudo isto ser escrito de uma forma só numa única linha:
     button{
         transition: opacity 0.5s ease-in-out 0.5s;
     } Não são necessários escrever todos os valores, se por exemplo, não existir ym delay desejado, o último valor não é necessário.
+
+Selecionando elementos pares e ímpares:
+A propriedade nth-child(even) seleciona elementos pares, e a nth-child(odd) seleciona os ímpares. Eis o exemplo com HTML e CSS:
+    <article class='alfa'>
+        <div class="beta">
+            <h1>Teste</h1>
+            <p>texto</p>
+            <button>eniar</button>
+        </div>
+    </article>
+     <article class='alfa'>
+        <div class="beta">
+            <h1>Teste</h1>
+            <p>texto</p>
+            <button>eniar</button>
+        </div>
+    </article>
+Se eu desejo que por exemplo, a segunda tag article seja colocada ao contrário (botão primeiro) eu teria um CSS:
+    .alfa{
+        display: flex;
+        flex-direction: row;
+}
+    .alfa:nth-child(even){
+        flex-direction: row-reverse;
+}
+Deste jeito somente os pares serão alterados, neste caso, somente o segundo article com class alfa.
+
+
+GRID:
+Quando definimos que o display é grid, temos que definir como será o template, isto é, a organização:
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); ---> sinaliza que serão três colunas com um elemento em cada. 
+}
+
+GRID AREA:
+Ao definir que um grid está numa área, estamos "jogando batalha naval" com o código, definindo onde está cada elemento numa linha e numa coluna, como visto na seção de empresas parceiras do código:
+        <section class="container backgroundGrey">
+            <h2>Nossas referências</h2>
+            <p>Nossos parceiros de negócios que confiam em nós e trabalham juntos</p>
+            <div class="gridContainerCompany">
+                <div class="gridCompanyItem comp1">
+                    <img src="assets/empresa1.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp2">
+                    <img src="assets/empresa2.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp3">
+                    <img src="assets/empresa3.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp4">
+                    <img src="assets/empresa4.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp5">
+                    <img src="assets/empresa5.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp6">
+                    <img src="assets/empresa6.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp7">
+                    <img src="assets/empresa7.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp8">
+                    <img src="assets/empresa8.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp9">
+                    <img src="assets/empresa9.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        .gridContainer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap:5rem
+        }
+        .gridContainerCompany{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+        .comp1{
+            grid-area: 3 / 1;
+        }
+        .comp2{
+            grid-area: 2 / 2 ;
+        }
+        .comp3{
+            grid-area: 3 / 2 ;
+        }
+        .comp4{
+            grid-area: 1 / 3 ;
+        }
+        .comp5{
+            grid-area: 2 / 3 ;
+        }
+        .comp6{
+            grid-area: 3 / 3;
+        }
+        .comp7{
+            grid-area: 2 / 4;
+        }
+        .comp8{
+            grid-area: 3 / 4;
+        }
+        .comp9{
+            grid-area: 3 / 5;
+        }

@@ -9,81 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-
-    <style>
-        html{
-            font-family: 'Manrope', sans-serif;
-            width: 100%;
-            height:100%;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        body{
-            margin:0;
-        }
-        h1{
-            font-size: 4rem;
-            font-weight: 800;
-            margin:0;
-        }
-        h2{
-            font-size: 3rem;
-            font-weight: 800;
-            margin:0;
-        }
-        h3{
-            font-size: 1.5rem;
-        }
-        .contacTitle{
-            margin-top: .5rem;
-        }
-
-        .container{
-            padding: 10rem 7.5rem;
-            text-align: center;
-        }
-
-        .container > p{
-            margin-top: 1.5rem;
-        }
-
-        .container > button{
-            margin-top: 2rem;
-            transition: opacity 0.5s ease-in-out, transform 0.5s .2s;
-        }
-        .container button:hover{
-            opacity: (0.8);
-            transform: scale(1.1);
-        }
-
-        #presentationContainer{
-            padding: 2.5rem 7.5rem;
-            height: 100vh;
-            background-image: url(assets/background.png);
-            background-repeat: no-repeat;
-            background-position: cover;
-        }
-        #presentation{
-            position: relative; 
-            width:40vw;
-            top:calc(50% - 9rem);
-        }
-
-        .backgroundGradient{
-            background: linear-gradient(180deg, #fff, #d9d9d9);
-        }
-
-        button{
-            background-color: #F84646;
-            color:#fff;
-            font-size: 1.5rem;
-            font-weight: 500;
-            padding: .5rem 1.5rem;
-            border-radius: .5rem;
-            border:none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
@@ -91,8 +17,122 @@
             <div id="presentation">
                 <h1>Transformando em produtos digitais</h1>
                 <p>
-                    Para que nossos clientes mantenham altos níveis de qualidade,<br> oferecemos serviços de gestão de projetos e análise de negócios<br> com nossa equipe especializada em diversos setores.
+                    Para que nossos clientes mantenham altos níveis de qualidade, oferecemos serviços de estão de projetos e análise de negócios com nossa equipe especializada em diversos setores.
                 </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>Qualidade e Processos</h2>
+            <p>
+                Para que nossos clientes mantenham altos níveis de qualidade, oferecemos serviços de Gestão de Projetos, Análise de Negócios e Gestão de Testes com nossa equipe especializada e com experiência em diversos setores.
+            </p>
+            <div class="gridContainer">
+                <div class="gridItem">
+                    <img src="assets/documentos.png" alt="">
+                    <h3>Análise de Documentos</h3>
+                    <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+                <div class="gridItem">
+                    <img src="assets/estrela.png" alt="">
+                    <h3>Aceitação e Avaliação</h3>
+                    <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+                <div class="gridItem">
+                    <img src="assets/coroa.png" alt="">
+                    <h3>Regras de negócios</h3>
+                    <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+                <div class="gridItem">
+                    <img src="assets/grafico.png" alt="">
+                    <h3>Diagramas</h3>
+                    <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+                <div class="gridItem">
+                    <img src="assets/grafico-pizza.png" alt="">
+                    <h3>Análise dos stakeholders</h3>
+                    <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+                <div class="gridItem">
+                    <img src="assets/prototipo.png" alt="">
+                    <h3>Prototipagem</h3>
+                    <p>Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container backgroundRed">
+            <h2>O que oferecemos de melhor?</h2>
+            <p>
+                Soluções suportadas por IoT
+            </p>
+            <!-- <ul id="qualities">
+                <li>Qualidade de Software</li>
+                <li><img src="assets/arrow.png" alt="">Prever possíveis erros na aplicação</li>
+                <li><img src="assets/arrow.png" alt="">Evitar  possíveis riscos</li>
+                <li><img src="assets/arrow.png" alt="">Economia de tempo e custo</li>
+            </ul> -->
+            <div id="qualities">
+                <div>Qualidade de Software</div>
+                <div><img src="assets/arrow.png" alt="">Prever possíveis erros na aplicação</div>
+                <div><img src="assets/arrow.png" alt="">Evitar  possíveis riscos</div>
+                <div><img src="assets/arrow.png" alt="">Economia de tempo e custo</div>
+            </div>
+        </section>
+
+        <section class="container">
+            <article class="articleContainer">
+                <div class="articleDetail">
+                    <h2>Gestão de Qualidade e Processos</h2>
+                    <p>
+                        Nossa equipe experiente; É composto por gerentes de projetos especializados, com experiência em diversos setores e com certificação PMP®. Estamos aqui para apoiar a gestão dos seus projetos, fortalecer as áreas que você considera fracas e implementar e desenvolver a metodologia PMI® com validade internacional na sua empresa.
+                    </p>               
+                    <button>Ver mais</button>
+                </div>
+                <img src="assets/Illustration.jpg" alt="">
+            </article>
+
+            <article class="articleContainer">
+                <div class="articleDetail">
+                    <h2>Gerenciamento e análise de testes</h2>
+                    <p>Para evitar erros de software nos projetos que consultamos, aplicamos cuidadosamente os testes que realizamos em cada etapa do projeto, seja manualmente ou com automação de testes. Nossa experiente equipe de testes oferece às instituições uma experiência de cliente segura, de alta qualidade e satisfatória do início ao fim, com serviços de teste de software de alta qualidade.</p>
+                    <button>Ver mais</button>
+                </div>
+                <img src="assets/tester.jpg" alt="">
+            </article>
+        </section>
+
+        <section class="container backgroundGrey">
+            <h2>Nossas referências</h2>
+            <p>Nossos parceiros de negócios que confiam em nós e trabalham juntos</p>
+            <div class="gridContainerCompany">
+                <div class="gridCompanyItem comp1">
+                    <img src="assets/empresa1.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp2">
+                    <img src="assets/empresa2.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp3">
+                    <img src="assets/empresa3.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp4">
+                    <img src="assets/empresa4.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp5">
+                    <img src="assets/empresa5.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp6">
+                    <img src="assets/empresa6.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp7">
+                    <img src="assets/empresa7.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp8">
+                    <img src="assets/empresa8.png" alt="">
+                </div>
+                <div class="gridCompanyItem comp9">
+                    <img src="assets/empresa9.png" alt="">
+                </div>
             </div>
         </section>
 
@@ -104,7 +144,47 @@
                 </p>
                 <button>Enviar mensagem</button>
         </section>
+
+        <footer class="container backgroundRed">
+            <section id="footerList">
+                <ul>
+                    <li>Soluções e Serviços</li>
+                    <li>Desenvolvimento de software</li>
+                    <li>Terceirização</li>
+                    <li>Gestão de Qualidade e Processos</li>
+                    <li>Consultoria</li>
+                    <li>Soluções suportadas por IoT</li>
+                </ul>
+
+                <ul>
+                    <li class="listTitle">Produtos</li>
+                    <li>Sistema de gestão educacional</li>
+                    <li>Sistema de Gestão de Capital Humano</li>
+                    <li>Sistema de gerenciamento de conteúdo</li>
+                </ul>
+
+                <ul>
+                    <li>Institucional</li>
+                    <li>Sobre nós</li>
+                    <li>Parceiros</li>
+                </ul>
+                <ul>
+                    <li>Comunicação</li>
+                    <li>Contato para informações</li>
+                    <li>Contato com especialistas</li>
+                </ul>
+            </section>
+            <section class="footerCopyright">
+                <div>© Copyright 2010-2021 - Can Çevik</div>
+                <div>
+                    <img src="assets/medium.png" alt="">
+                    <img src="assets/linkedin.png" alt="">
+                    <img src="assets/twitter.png" alt="">
+                    <img src="assets/instagram.png" alt="">
+                    <img src="assets/facebook.png" alt="">
+                </div>
+            </section>
+        </footer>
     </main>
-    
 </body>
 </html>
